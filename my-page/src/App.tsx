@@ -1,16 +1,14 @@
 import React from 'react';
 import Bio from './myInfo.json';
 import './App.css';
+import { Information } from './Information';
+
 
 function App() {
-  const {name, bio, contacts} = Bio;
   return (
     <div className="App">
       <header className="App-header">
-        hello world!
-        <h2> name: {name}</h2>
-        <p>BIO : {bio}</p>
-        <p>contacts: {contacts}</p>
+        <Information name={Bio.name} bio={Bio.bio} contacts={Bio.contacts}/>
       </header>
     </div>
   );
